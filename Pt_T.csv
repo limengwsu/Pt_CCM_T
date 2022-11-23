@@ -1,0 +1,43 @@
+﻿Parameters,T_10C,T_18C,T_25C,Units (per cell),Notes,Definition
+N,4.00E+06,4.00E+06,4.00E+06,cells/mL,total cell number if Ve≠1,Cell density
+Ve,1.00E+00,1.00E+00,1.00E+00,cm3,,extracellular/bulk volume
+Vc,6.70E-11,7.03E-11,7.71E-11,cm3,,cytoplasmic volume
+Vp,1.68E-11,1.76E-11,1.93E-11,cm3,25% of Vc,chloroplast stroma volume
+r_bl,1.00E-01,1.00E-01,1.00E-01,µm,,thickness of the surface layer
+Npyr,1.00E+00,1.00E+00,1.00E+00,,,number of pyrenoids per cell
+Rpyr,calculated,calculated,calculated,µm,Rpyr = (mRub/8/0.000628*1e15*0.75/π)^(1/3),radius of pyrenoid
+temp,10,18,25,°C,,Temperature in celcius
+S,3.50E+01,3.50E+01,3.50E+01,‰,,Salinity
+DIC,2230,2230,2230,µM,make sure DIC or CO2 concentration given,Total dissolved inorganic carbon
+pHe,8.1,8.1,8.1,,,extracellular pH
+pHc,7.8,7.8,7.8,,,cytoplasmic pH
+pHp,8.15,8.15,8.15,,8.15 in original model,chloroplast pH
+kuf,1.15E-02,2.60E-02,4.52E-02,s-1,,uncatatlyzed CO2 hydration rate
+kur,8.40E-05,1.57E-04,2.67E-04,s-1,,uncatatlyzed HCO3- dehydration rate
+ksf,1.15E-02,2.60E-02,4.52E-02,s-1,Matlab model unit cm3/s,eCA activity per cell
+kcf,8.67E+01,2.03E+02,2.83E+02,s-1,,cytoplasmic CO2 hydration rate (CA catalyzed)
+kpf,1.15E-02,2.60E-02,4.52E-02,s-1,equals kuf,chloroplast stroma CO2 hydration rate 
+kyf,6.76E+03,6.76E+03,6.76E+03,s-1,Hopkinson 2011 1.8e4,pyrenoid CO2 hydration rate (CA catalyzed)
+kcat_R,calculated,calculated,calculated,s-1,,Rubisco turnover rate
+Km_R,calculated,calculated,calculated,µM,,Rubisco half saturation constant for CO2
+mRub,1.24E-17,1.24E-17,1.24E-17,mol/cell,,Rubisco content
+Vm_Bc,1.13E-18,3.15E-18,1.11E-17,mol/cell/s,,maximal HCO3- uptake rate into cytoplasm
+Km_Bc,2.00E+01,2.00E+01,2.00E+01,µM,,half-saturation constant for HCO3- uptake into cytoplasm
+Vm_Bp,1.62E-17,3.52E-17,5.31E-17,mol/cell/s,,maximal HCO3- uptake rate into chloroplast
+Km_Bp,1.32E+01,4.58E+01,7.37E+01,µM,"changed from 50µM, choose better pump for pH 8.1 and 9",half-saturation constant for HCO3- uptake into chloroplast
+fc,4.92E-09,9.03E-09,1.46E-08,cm3 s-1,,
+fb,1.22E-11,6.52E-12,1.18E-11,cm3 s-1,,
+fc_sm,calculated,calculated,calculated,cm3 s-1,or noted as fc_M,CO2 mass transfer coefficient from surface to cytoplasm
+fb_sm,0,0,0,cm3 s-1,or set to 0,HCO3-  mass transfer coefficient from surface to cytoplasm
+fc_p,calculated,calculated,calculated,cm3 s-1,maybe optimized,CO2 mass transfer coefficient from cytoplasm to chloroplast
+fb_p,0.00E+00,0.00E+00,0.00E+00,cm3 s-1,,HCO3- mass transfer coefficient from cytoplasm to chloroplast
+fc_y,calculated,calculated,calculated,cm3 s-1,smaller than diffusion,CO2 mass transfer coefficient from chloroplast to pyrenoid
+pyr_factor,6.33E-03,6.33E-03,6.33E-03,,"0 to 1, pyr slowing diffusion",fc_y = fc_y_diffusion * pyr_factor
+STOP,STOP,STOP,STOP,,,
+Reff,calculated,calculated,calculated,µm,,effective radius of a cell
+Vs,calculated,calculated,calculated,cm3,,Cell surface volume
+Vy,calculated,calculated,calculated,cm3,,pyrenoid volume
+fc_bl,calculated,calculated,calculated,cm3 s-1,,CO2 mass transfer coefficient from bulk to surface
+fb_bl,calculated,calculated,calculated,cm3 s-1,,HCO3- mass transfer coefficient from bulk to surface
+CO2,calculated,calculated,calculated,µM,,CO2[aq] concentration bulk
+RS,2.58E-18,3.40E-18,7.14E-18,mol/cell/s,,Repiration rate
