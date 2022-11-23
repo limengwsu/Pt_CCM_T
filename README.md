@@ -1,5 +1,5 @@
 # Pt_CCM_T
-Pt_CCM_multi.py simulate CCM Ci fluxes in diatom *Phaeodactylum triconutum* at different temperatures all at once. The code is adapted from [Fcyl_CCM/Li_2022](https://github.com/limengwsu/Fcyl_CCM/tree/main/Li_2022).
+[Pt_CCM_multi.py](https://github.com/limengwsu/Pt_CCM_T/blob/main/Pt_CCM_multi.py) simulates CCM Ci fluxes in diatom *Phaeodactylum triconutum* at different temperatures. The code is adapted from [Fcyl_CCM/Li_2022](https://github.com/limengwsu/Fcyl_CCM/tree/main/Li_2022).
 
 ## Software requirement
 
