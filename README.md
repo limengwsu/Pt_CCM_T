@@ -18,3 +18,7 @@ Steady state fluxes and Ci concentrations in csv format, plots of Ci concentrati
 All files will be written within the default folder.
 
 See [Fcyl_CCM/Li_2022](https://github.com/limengwsu/Fcyl_CCM/tree/main/Li_2022) for more details.
+
+## Citation:
+If the model helps your research, please cite
+[Li, Meng, and Jodi N. Young. "Temperature sensitivity of carbon concentrating mechanisms in the diatom Phaeodactylum tricornutum." Photosynthesis Research (2023). 2023 Mar 7. doi: 10.1007/s11120-023-01004-2](https://link.springer.com/article/10.1007/s11120-023-01004-2)
